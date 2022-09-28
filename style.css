@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: var(--off-white);
 }
 
 :root {
@@ -15,11 +17,6 @@ h1 {
     padding: 1rem;
 }
 
-body {
-    text-align: center;
-    background-color: var(--off-white);
-}
-
 label {
     display: block;
     padding: 0.3rem 1rem;
@@ -27,10 +24,11 @@ label {
 }
 
 input {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 5rem;
     border-radius: 0.5rem;
     border-color: coral;
     cursor: pointer;
+    width: 40%;
 }
 
 div {
@@ -46,4 +44,5 @@ button {
     border-radius: 0.5rem;
     border-color: coral;
     color: coral;
+    cursor: pointer;
 }

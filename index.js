@@ -6,25 +6,24 @@ const output = document.querySelector("#output");
 
 function calculateProfitAndLoss(initial, quantity, current) {
     if (initial > current) {
-
         var loss = (initial - current) * quantity;
         var lossPercentage = (loss / initial) * 100;
-        output.innerText = `The loss is ${loss} and the percentage is ${lossPercentage}%.`;
+        output.innerText = `The loss is ${loss} and the loss percentage is ${lossPercentage}%.`;
     } else if (current > initial) {
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
-        output.innerText = `The profit is ${profit} and the percentage is ${profitPercentage}%.`;
+        output.innerText = `The profit is ${profit} and the profit percentage is ${profitPercentage}%.`;
         // console.log(profit, profitPercentage);
         // console.log(initial, quantity, current);
     } else {
-        output.innerText = "There is NO gain and NO gain."
+        output.innerText = "There is NO gain and NO pain."
     }
 }
 
 function clickHandler() {
-    var ip = inputInitial.value;
-    var qty = inputQuantity.value;
-    var curp = inputCurrent.value;
+    var ip = Number(inputInitial.value);
+    var qty = Number(inputQuantity.value);
+    var curp = Number(inputCurrent.value);
 
     //console.log(inputInitial.value, inputQuantity.value, inputCurrent.value);
     calculateProfitAndLoss(ip, qty, curp);
